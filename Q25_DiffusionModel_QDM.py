@@ -71,7 +71,7 @@ except ImportError:
 # =========================
 # Konfiguracija
 # =========================
-CSV_PATH = Path("/Users/4c/Desktop/GHQ/data/loto7hh_4600_k31.csv")
+CSV_PATH = Path("/data/loto7hh_4600_k31.csv")
 N_NUMBERS = 7
 N_MAX = 39
 
@@ -274,7 +274,7 @@ if __name__ == "__main__":
 
 
 """
-Q25 Diffusion Model (QDM — reverzni denoise preko aux-path superpozicije): CSV: /Users/4c/Desktop/GHQ/data/loto7hh_4600_k31.csv
+Q25 Diffusion Model (QDM — reverzni denoise preko aux-path superpozicije): CSV: /data/loto7hh_4600_k31.csv
 redova: 4600 | seed: 39 | β: 0.785398
 BEST hparam: nq= 5 | T (koraka): 2 | cos(bias, freq_csv): 0.901332
 --- forward referentni timesteps (clean → noise) ---
@@ -282,7 +282,7 @@ BEST hparam: nq= 5 | T (koraka): 2 | cos(bias, freq_csv): 0.901332
   t=1  α=0.7071  cos(bias, freq_csv)=0.901337  NEXT=(7, 19, 22, 24, 27, 28, 31)
   t=2  α=0.0000  cos(bias, freq_csv)=0.902043  NEXT=(1, 2, 3, 4, 5, 6, 7)
 --- glavna predikcija (QDM reverzni denoise) ---
-predikcija NEXT: (7, 9, 19, 21, 22, 28, 29)
+predikcija NEXT: (7, 9, x, y, z, 28, 29)
 """
 
 
